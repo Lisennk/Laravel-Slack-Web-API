@@ -13,7 +13,7 @@ Please note that this implementation is very lightweight meaning you'll need to 
 ## :earth_americas: Installation
 **1)** Require Composer package
 ```bash
-composer requiire lisennk/laravel-slack-web-api
+composer require lisennk/laravel-slack-web-api
 ```
 **2)** Publish config 
 ```bash

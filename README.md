@@ -1,4 +1,8 @@
 # :rocket: Laravel Slack API :rocket:
+[![Latest Stable Version](https://poser.pugx.org/lisennk/laravel-slack-web-api/v/stable)](https://packagist.org/packages/lisennk/laravel-slack-web-api)
+[![Total Downloads](https://poser.pugx.org/lisennk/laravel-slack-web-api/downloads)](https://packagist.org/packages/lisennk/laravel-slack-web-api)
+[![License](https://poser.pugx.org/lisennk/laravel-slack-web-api/license)](https://packagist.org/packages/lisennk/laravel-slack-web-api)
+
 Lightweight Laravel 5 wrapper for Slack Web API, including facade and config.
 
 Please note that this implementation is very lightweight meaning you'll need to do some more work than usual, but in return you get a lot more flexibility. This package doesn't provide methods such as `Chat::postMessage(string message)`, it literally provides one method — `SlackApi::execute(string method, array parameters)`.

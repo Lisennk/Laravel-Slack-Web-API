@@ -19,7 +19,7 @@ composer requiire lisennk/laravel-slack-web-api
 ```bash
 php artisan vendor:publish
 ```
-**3)** Open `config/slack.php` and insert your Slack token to make API requests
+**3)** Open `config/slack.php` and insert your [token](https://api.slack.com/docs/oauth-test-tokens) to make API requests
 ```php
 'token' => 'your-token-here'
 ```
@@ -62,9 +62,7 @@ To call Slack API, you need to call `execute` method of `SlackApi` class and pas
 $api->execute('method.name', [
   'parameter_one' => 'some-data',
   'parameter_two' => 'some-another-data'
-  
   // ...
-  
 ];
 ```
 This will return plain PHP array with data from Slack.

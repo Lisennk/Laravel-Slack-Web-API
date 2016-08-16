@@ -1,0 +1,23 @@
+{
+    "name": "lisennk/laravel-slack-web-api",
+    "description": "Light Laravel wrapper for Slack Web API",
+    "keywords": ["slack", "laravel", "api"],
+    "require": {
+        "frlnc/php-slack": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lisennk\\Laravel\\SlackWebApi\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lisennk,",
+            "email": "serewann@gmail.com"
+        }
+    ]
+}

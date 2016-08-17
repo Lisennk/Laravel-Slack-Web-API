@@ -85,7 +85,6 @@ public function postMessage(SlackApi $api)
     $response = $api->execute('users.info', [
       'user' => 'U1234567890'
     ]);
-    
     $name = $response['user']['name'];
     // Do something amazing with data from Slack...
   } catch (SlackApiException $e) {
@@ -101,13 +100,12 @@ use \Lisennk\Laravel\SlackWebApi\Exceptions\SlackApiException;
 
 // ...
 
-public function postMessage(SlackApi $api)
+public function postMessage()
 {
   try {
     $response = SlackApi::execute('users.info', [
       'user' => 'U1234567890'
     ]);
-    
     $name = $response['user']['name'];
     // Do something amazing with data from Slack...
   } catch (SlackApiException $e) {

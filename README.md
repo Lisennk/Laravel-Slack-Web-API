@@ -20,15 +20,7 @@ Please note that this implementation is very lightweight meaning you'll need to 
 ```bash
 composer require lisennk/laravel-slack-web-api
 ```
-**2)** Publish the config file
-```bash
-php artisan vendor:publish
-```
-**3)** Open `config/slack.php` and insert your [token](https://api.slack.com/docs/oauth-test-tokens) to make API requests
-```php
-'token' => 'your-token-here'
-```
-**4)** Open `config/app.php` and add `\Lisennk\Laravel\SlackWebApi\Providers\SlackApiServiceProvider::class` to the `providers[]` array
+**2)** Open `config/app.php` and add `\Lisennk\Laravel\SlackWebApi\Providers\SlackApiServiceProvider::class` to the `providers[]` array
 
 *For example:*
 ```php
@@ -44,7 +36,7 @@ php artisan vendor:publish
   
   // ...
 ```
-**5)** If you want to use the Facade, add `\Lisennk\Laravel\SlackWebApi\Facades\SlackApi::class` to the `aliases[]` array in `config/app.php`
+**3)** If you want to use the Facade, add `\Lisennk\Laravel\SlackWebApi\Facades\SlackApi::class` to the `aliases[]` array in `config/app.php`
 
 *For example:*
 ```php
@@ -59,6 +51,14 @@ php artisan vendor:publish
   ],
   
   // ...
+```
+**4)** Publish the config file
+```bash
+php artisan vendor:publish
+```
+**5)** Open `config/slack.php` and insert your [token](https://api.slack.com/docs/oauth-test-tokens) to make API requests
+```php
+'token' => 'your-token-here'
 ```
 ## :fork_and_knife: Usage
 
@@ -118,4 +118,6 @@ public function postMessage()
 ## :hibiscus: Contributing
 
 Feel free to create pull requests or issues, and report typos.
+## :books: Reference 
+* To use Slack Events API, we recommend the [Laravel Slack Events API package](https://github.com/Lisennk/Slack-Events)
 

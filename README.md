@@ -6,7 +6,7 @@
 
 Lightweight Laravel 5 wrapper for the Slack Web API, including a facade and config options.
 
-Please note that this implementation is very lightweight meaning you'll need to do some more work than usual, but in return you get a lot more flexibility. This package doesn't provide methods such as `Chat::postMessage(string message)`, it just provides one method: `SlackApi::execute(string method, array parameters)`.
+Please note that this implementation is very lightweight meaning you'll need to do some more work than usual, but in return you get a lot more flexibility. This package doesn't provide methods such as `Chat::postMessage(string $message)`, it just provides one method: `SlackApi::execute(string $method, array $parameters)`.
 
 **:thumbsup: Reasons to use this package for the Slack API:**
 * Built-in compliance with the Slack API [rate limits](https://api.slack.com/docs/rate-limits)
